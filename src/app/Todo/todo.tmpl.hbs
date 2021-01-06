@@ -1,0 +1,19 @@
+<div class="todo">
+  <div class="todo-title">
+    <h2>Todo</h2>
+  </div>
+  <div class="todo-tasks">
+    <ul class="tasks">
+      {{#if taskItems}}
+      {{{taskItems}}}
+      {{else}}
+      <p class="task-empty">No Tasks</p>
+      {{/if}}
+    </ul>
+    <div class="todo-new new-task">
+      <input class="new-task-text" type="text" placeholder="New Task">
+      <button class="new-task-button" type="button">Create</button>
+    </div>
+  </div>
+  
+</div>
